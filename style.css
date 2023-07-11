@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.wrapper {
+  background-color: aliceblue;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
+.wrapper .menu-bar {
+  background-color: white;
+
+  padding: 1.5rem;
+}
+
+.menu {
+  background: white;
+  margin-inline: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.11);
+  cursor: pointer;
+}
+
+.click {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  height: 500px;
+  outline: none;
+  padding: 1rem;
+}
+
+input[type="color"] {
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  height: 2rem;
+  width: 3rem;
+}
