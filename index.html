@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu-bar">
+        <span class="menu" onclick="bold()"
+          ><i class="fa-solid fa-bold"></i
+        ></span>
+        <span class="menu" onclick="italic()"
+          ><i class="fa-solid fa-italic"></i
+        ></span>
+        <span class="menu" onclick=" underLines()"
+          ><i class="fa-solid fa-underline"></i
+        ></span>
+        <span class="menu"
+          ><i class="fa-solid fa-font"></i>
+          <select id="select_font" onchange="changeFont(this)">
+            <option value="Arial">Arial</option>
+            <option value="Sans Serif" selected>Sans Serif</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Arial Black">Arial Black</option>
+            <option value="Impact">Impact</option>
+            <option value="Bookman">Bookman</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Palatino">Palatino</option>
+            <option value="Georgia">Georgia</option>
+          </select>
+        </span>
+        <span class="menu">Background Color</span>
+        <input
+          type="color"
+          class="menu"
+          id="Background-color"
+          oninput="background_Color(this)"
+        />
+        <span class="menu">Font Color </span>
+        <input type="color" class="menu" id="" oninput="font_color(this)" />
+
+        <span class="menu">fontSize</span>
+        <input type="number" min="1" oninput="font_size(this)" />
+      </div>
+
+      <div class="content" id="capture" contenteditable="true"></div>
+      <button id="output" onclick="screenshot()">Take Screenshot</button>
+    </div>
+
+    <script src="javascript.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </body>
+</html>
